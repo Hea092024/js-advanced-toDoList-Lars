@@ -60,4 +60,14 @@ const deleteTask = (task) => {
 const toggleEditTask = ()=> {
     taskText.readOnly = taskText.readOnly
     editButton.value = taskText.readOnly ? "edit" : "save"
-};
+    
+    if(taskText.readOnly){
+        const taskIndex = listArr.indexOf(oldTask);
+        if(taskIndex !== -1){
+            listArr[taskIndex] = taskText.value;
+            localStorage.setItem("listArr", JSON.stringify(listArr));
+        }
+    }else{
+        taskText.focus();
+    }       
+}
