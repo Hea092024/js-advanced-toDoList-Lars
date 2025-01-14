@@ -71,3 +71,16 @@ const toggleEditTask = ()=> {
         taskText.focus();
     }       
 }
+
+inputForm.addEventListener("submit", (event) => {
+    const newTask = inputField.value;
+    if (newTask) {
+        listArr.push(newTask);
+        localStorage.setItem("listArr", JSON.stringify(listArr));
+        renderTasks();
+        inputField.value = "";
+    }
+    else {
+        alert("Please enter a task");
+    }
+});
