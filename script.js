@@ -22,8 +22,14 @@ const createTaskCard = () => {
     container2.className="Task Complete";
 
     const isComplete = document.createElement("input");
+    isComplete.type ="checkbox";
+    isComplete.id ="checkbox";
 
     const taskText = document.createElement("input");
+    taskText.className ="text";
+    taskText.type ="text";
+    taskText.value ="task";
+    taskText.render =true;
 
     const container2 = document.createElement("div");
 
