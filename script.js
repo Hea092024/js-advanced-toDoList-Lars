@@ -56,3 +56,7 @@ const deleteTask = (task) => {
   localStorage.setItem("listArr", JSON.stringify(listArr));
   renderTasks();
 };
+
+const toggleEditTask = ()=> {
+    taskText.readOnly = taskText.readOnly
+};
