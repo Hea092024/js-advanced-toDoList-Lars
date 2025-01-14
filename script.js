@@ -15,6 +15,7 @@ const renderTask = () => {
 
 const createTaskCard = () => {
     const mainCard = document.createElement("div");
+    mainCard.className = "main-card";
 
     const container1 = document.createElement("div");
 
