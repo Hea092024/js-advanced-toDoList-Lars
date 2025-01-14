@@ -84,3 +84,6 @@ inputForm.addEventListener("submit", (event) => {
         alert("Please enter a task");
     }
 });
+
+initializeList();
+renderTasks();
