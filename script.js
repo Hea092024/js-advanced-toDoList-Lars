@@ -28,3 +28,8 @@ const createTaskCard = () => {
 
     const deteButton = document.createElement("input");
 }
+
+container1.prepend(isComplete);
+container2.append(delteButton, editButton);
+mainCard.append(container1, taskText, container2);
+listContainer.append(mainCard);
