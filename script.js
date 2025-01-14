@@ -18,6 +18,8 @@ const createTaskCard = () => {
     mainCard.className = "main-card";
 
     const container1 = document.createElement("div");
+    container1.className ="container1";
+    container2.className="Task Complete";
 
     const isComplete = document.createElement("input");
 
