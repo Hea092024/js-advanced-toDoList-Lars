@@ -59,4 +59,5 @@ const deleteTask = (task) => {
 
 const toggleEditTask = ()=> {
     taskText.readOnly = taskText.readOnly
+    editButton.value = taskText.readOnly ? "edit" : "save"
 };
