@@ -5,7 +5,7 @@ const listContainer = document.querySelector("#list-container");
 litarr = [];
 
 const initializeList = () => {
-    let listArr = localStorage.getItem("listArr"); ? JSON.parse.parse(storedList) : [];
+    let listArr = localStorage.getItem("listArr"); JSON.parse.parse(storedList) : [];
     localStorage.setItem("listArr", JSON.stringify(listArr));
 };
 
