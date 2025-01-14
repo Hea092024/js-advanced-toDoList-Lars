@@ -60,3 +60,12 @@ header {
   gap: 10px;
   font-size: large;
 }
+
+.text{
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  border-color: #40707600;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
